@@ -1,0 +1,349 @@
+:root {
+    --black: #222222;
+    --light-pink: #F1E4E6;
+    --dark-pink: #F16D7F;
+    --sales-bkg-color: #4F4745;
+    --white: #FFFFFF;
+    --grey: #9F9F9F;
+    --light-grey: #F8F8F8;
+    --black-gray: #5D5D5D;
+    --red: #F26376;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header_wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header_list {
+    display: flex;
+}
+
+.header_logo {
+    margin: 0 41px 0 0;
+}
+
+.header_link {
+    margin: 0 0 0 34px;
+}
+
+.header_nav {
+    display: none;
+}
+
+.header_button {
+    border: none;
+    background-color: transparent;
+}
+
+.brand {
+    display: flex;
+    margin: 0 0 62px 0;
+}
+
+.brand-title-wrp {
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-pink);
+}
+
+.brand_title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand_lay: block;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.brand-subtitle-pink {
+    color: var(--dark-pink);
+}
+
+
+.sales_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales_item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 32px;
+    box-sizing: border-box;
+    width: 360px;
+    min-height: 260px;
+    background-color: var(--sales-bkg-color);
+    text-transform: uppercase;
+}
+
+.sales-item-woman {
+    background-image: url(../img/women-sale.jpg);
+}
+
+.sales-item-man {
+    background-image: url(../img/man-sale.jpg);
+}
+
+.sales-item-kids {
+    background-image: url(../img/kids-sale.jpg);
+}
+
+.sales-item-shoes {
+    width: 100%;
+    min-height: 180px;
+    background-image: url(../img/accesories.jpg);
+    margin: 0 0 97px;
+}
+
+.sales_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+}
+
+.sales_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--dark-pink);
+    
+}
+
+.catalog {
+    padding-bottom: 95px;
+}
+
+.catalog_title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.catalog_text {
+    padding: 0 0 48px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey);
+    text-align: center;
+}
+
+.catalog_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 32px;
+    box-sizing: border-box;
+    width: 360px;
+    min-height: 260px;
+    background-color: var(--light-grey);
+}
+
+.catalog_item-title {
+    padding: 24px 0 12px 18px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.catalog_item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black-gray);
+    padding: 0 0 0 18px;
+}
+
+.catalog_price {
+    padding: 18px 0 20px 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark-pink);
+}
+
+.catalog_button {
+    width: 212px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: var(--red);
+    padding: 15px 0;
+    text-decoration: none;
+    border: 2px solid var(--red); 
+}
+
+.aside {
+    background-color: var(--black);
+}
+
+.aside_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 341px;
+}
+
+.aside_item {
+    justify-content: space-between;
+}
+
+.aside_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.aside_title {
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: var(--white);
+    text-align: center;
+    padding: 19px 0 16px 0;
+}
+
+.aside_text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: var(--white);
+}
+
+.footer_main {
+    min-height: 448px;
+    display: flex;
+    align-items: center; 
+    background-image: url(../img/footer__pic.jpg);
+    background-repeat: no-repeat;
+}
+
+.footer-main-hlp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.girl_face {
+    width: 360px;
+    height: 225px;
+}
+
+.footer_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer_text {
+    padding: 30px 0 0 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.subscribe {
+    width: 550px;
+}
+
+.subscribe_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.subscribe_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.subscribe_form {
+   
+}
+
+.footer-arr-social {
+    background-color: var(--black);
+}
+
+.footer-arr-social-wrp {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.footer-arr-social-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+}
