@@ -97,12 +97,31 @@
                     </a>
                 </li>
                 <li class="header_item">
-                    <a href="shoping.html" class="header_link">
-                        <img src="img/basket.png" alt="basket">
-                    </a>
+                    <span class="cartIconWrap">
+                    <img class="cartIcon" src="img/basket.png" alt="">
+                    <span>0</span>
+                </span>
+
+                <div class="basket hidden">
+                    <div class="basketRow basketHeader">
+                        <div>Название товара</div>
+                        <div>Количество</div>
+                        <div>Цена за шт.</div>
+                        <div>Итого</div>
+                    </div>
+
+                    <div class="basketTotal">
+                        Товаров в корзине на сумму:
+                        $<span class="basketTotalValue">0</span>
+                    </div>
+                    </div>
+                    
+                    
+                    
                 </li>
+
             </ul>
-        </div>
+        </div>        
     </header>
     <main>
         <section class="brand">
@@ -143,6 +162,7 @@
             <div class="container">
                 <h2 class="catalog_title">Fetured Items</h2>
                 <p class="catalog_text">Shop for items based on what we featured in this week</p>
+
                 <ul class="catalog_list">
                     <li class="catalog_item">
                         <div class="catalog_wrapper">
